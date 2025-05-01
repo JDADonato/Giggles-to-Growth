@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pediatric Health Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>👶 Pediatric Health Tracker</h1>
+      <nav>
+        <ul>
+          <li><a href="#vaccinations">Vaccinations</a></li>
+          <li><a href="#growth">Growth</a></li>
+          <li><a href="#education">Tips</a></li>
+          <li><a href="#chat">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Vaccination Schedule -->
+    <section id="vaccinations" class="card">
+      <h2>💉 Vaccination Schedule</h2>
+      <form id="vaccine-form">
+        <input type="text" id="vaccine-name" placeholder="Vaccine Name" required />
+        <input type="date" id="vaccine-date" required />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="vaccine-list" class="list"></ul>
+    </section>
+
+    <!-- Growth & Milestones -->
+    <section id="growth" class="card">
+      <h2📏>📏 Growth & Milestones</h2>
+      <form id="growth-form">
+        <input type="text" id="milestone-desc" placeholder="Milestone Description" required />
+        <input type="date" id="milestone-date" required />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="growth-list" class="list"></ul>
+    </section>
+
+    <!-- Health Education -->
+    <section id="education" class="card">
+      <h2>📚 Health Tips</h2>
+      <div class="tips">
+        <details>
+          <summary>🤱 Breastfeeding</summary>
+          <p>Feed on demand, maintain hydration, and ensure a good latch.</p>
+        </details>
+        <details>
+          <summary>🧼 Cord Care</summary>
+          <p>Keep dry, avoid covering with diapers, and consult if signs of infection appear.</p>
+        </details>
+        <details>
+          <summary>🍽️ Nutrition</summary>
+          <p>Start solids at 6 months, offer a variety of foods, and avoid added sugars.</p>
+        </details>
+        <details>
+          <summary>🚑 First Aid Tips</summary>
+          <p>Monitor fever, provide sponge baths, and seek help if temperature exceeds 38.5°C.</p>
+        </details>
+        <details>
+          <summary>🏠 Home Care Tips</summary>
+          <p>Encourage rest, keep child hydrated, and monitor symptoms regularly.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Community Chat -->
+    <section id="chat" class="card">
+      <h2>👩‍👩‍👧 Talk to Other Moms</h2>
+      <div class="chat-box" id="chat-box"></div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Say something..." required />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Pediatric Health Tracker. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
